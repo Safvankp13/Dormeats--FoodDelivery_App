@@ -7,7 +7,7 @@ import ViewProducts from '../../components/viewProduct/ViewProducts';
 import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import AddMenu from '../../components/Menu/AddMenu';
-import ViewMenu from '../../components/Menu/viewMenu';
+import ViewMenu from '../../components/Menu/ViewMenu';
 
 const tabs=[
     {id:"products",label:"products",icon:InventoryIcon},
