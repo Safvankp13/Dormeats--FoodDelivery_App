@@ -1,5 +1,5 @@
 import React from 'react'
-import './CreateProducts.scss'
+import './createProducts.scss'
 import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
 import { useProductStore } from '../../store/useProductStore';
 

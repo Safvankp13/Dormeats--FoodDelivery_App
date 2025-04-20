@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './ViewProducts.scss'
+import './viewProducts.scss'
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import SaveAsIcon from '@mui/icons-material/SaveAs';
