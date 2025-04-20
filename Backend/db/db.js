@@ -15,3 +15,4 @@ const pool = new Pool({
       console.log('Connected to the database:', res.rows);
     }
   });
+  export default pool;
