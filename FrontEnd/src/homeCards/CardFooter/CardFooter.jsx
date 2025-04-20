@@ -1,5 +1,5 @@
 import React from 'react'
-import "./CardFooter.scss"
+import "./cardFooter.scss"
 const CardFooter = () => {
   return (
     <footer className='footer'>
