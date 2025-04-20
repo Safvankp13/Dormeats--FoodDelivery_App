@@ -1,5 +1,5 @@
 import React from 'react'
-import './Dashboard.scss'
+import './dashboard.scss'
 import InventoryIcon from '@mui/icons-material/Inventory';
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import CreateProducts from '../../components/createProducts/CreateProducts';
