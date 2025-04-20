@@ -1,0 +1,361 @@
+$primary-color: #f71238; 
+$secondary-color: #1fab71; 
+$bg-color: #F5F5F5; 
+$card-bg: #FFFFFF;
+$gray-text: #757575;
+$dark-text: #212121; 
+$hover-color: #8A7F00;
+
+.premium-page {
+  font-family: 'Inter', sans-serif;
+  background-color: $bg-color;
+  color: $dark-text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  .hero-section {
+    background: #197f91;
+background: linear-gradient(90deg, rgba(25, 127, 145, 1) 0%, rgba(2, 161, 186, 1) 35%, rgba(0, 195, 255, 1) 100%);
+    color: white;
+    width: 100%;
+    padding: 6rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+
+    .hero-content {
+      max-width: 700px;
+      margin: 0 auto;
+
+      h1 {
+        
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+
+      p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+
+      .cta-btn {
+        background-color: rgb(0, 206, 144);
+        color: white;
+        padding: 1.1rem 3rem;
+        border-radius: 20px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+
+       
+      }
+    }
+  }
+
+
+  .features-section {
+    padding: 5rem 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: $primary-color;
+    }
+
+    .features-cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 4rem;
+
+      .feature-card {
+        background-color: $card-bg;
+        padding: 2.5rem;
+        border-radius: 12px;
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 30%;
+        transition: transform 0.3s ease;
+        color: $dark-text;
+
+        .feature-icon {
+          font-size: 3rem;
+          color: $secondary-color;
+          margin-bottom: 1.5rem;
+        }
+
+        h3 {
+          font-size: 1.8rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          color: $gray-text;
+        }
+
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+
+
+  .pricing-section {
+    padding: 3rem 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 2.5rem;
+      text-decoration: underline;
+      margin-bottom: 5rem;
+      color: $primary-color;
+    }
+
+    .pricing-cards {
+      display: flex;
+      justify-content:space-evenly;
+      gap: 3rem;
+      flex-wrap: wrap;
+
+      .pricing-card {
+        background-color: $card-bg;
+        padding: 3rem 2rem;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        width: 30%;
+        text-align: center;
+        transition: transform 0.3s ease;
+
+        &.premium {
+          border: 2px solid $secondary-color;
+          background-color: lighten($card-bg, 5%);
+        }
+
+        h3 {
+          font-size: 2rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .price {
+          font-size: 2rem;
+          font-weight: 600;
+          margin-bottom: 1rem;
+          color: $secondary-color;
+        }
+
+        .plan-btn-1 {
+          background-color:rgb(13, 229, 128);
+          color: white;
+          padding: 0.4rem 1.2rem;
+          border-radius: 30px;
+          font-size: 1.1rem;
+          transition: background-color 0.3s ease;
+          margin-top: 1rem;
+
+          &:hover {
+            background-color:rgb(7, 214, 117);
+          }
+        }
+        .plan-btn-2 {
+          background-color: rgb(59, 182, 244);
+          color: white;
+          padding: 0.4rem 1.2rem;
+          border-radius: 30px;
+          font-size: 1.1rem;
+          transition: background-color 0.3s ease;
+          margin-top: 1rem;
+
+          &:hover {
+            background-color: rgb(36, 166, 232);
+          }
+        }
+
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+
+ 
+  .cta-section {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: $primary-color;
+    color: white;
+    width: 100%;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: $card-bg;
+    }
+
+    .cta-btn {
+      background-color: $secondary-color;
+      color: white;
+      padding: 1.2rem 3rem;
+      border-radius: 30px;
+      font-size: 1.3rem;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $hover-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .premium-page {
+    .features-section .features-cards,
+    .pricing-section .pricing-cards {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .feature-card,
+      .pricing-card {
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .premium-page {
+    .hero-section {
+      padding: 4rem 1rem;
+
+      .hero-content {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+
+        .cta-btn {
+          font-size: 1rem;
+          padding: 1rem 2rem;
+        }
+      }
+    }
+
+    .features-section {
+      padding: 3rem 1rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .features-cards {
+        gap: 1.5rem;
+
+        .feature-card {
+          width: 100%;
+          padding: 2rem;
+
+          h3 {
+            font-size: 1.5rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .pricing-section {
+      padding: 3rem 1rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .pricing-cards {
+        gap: 2rem;
+
+        .pricing-card {
+          width: 100%;
+          padding: 2.5rem 1.5rem;
+
+          h3 {
+            font-size: 1.7rem;
+          }
+
+          .price {
+            font-size: 1.5rem;
+          }
+
+          .plan-btn-1,
+          .plan-btn-2 {
+            font-size: 1rem;
+            padding: 0.5rem 1.5rem;
+          }
+        }
+      }
+    }
+
+    .cta-section {
+      padding: 3rem 1rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .cta-btn {
+        font-size: 1.1rem;
+        padding: 1rem 2.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .premium-page {
+    .hero-section .hero-content h1 {
+      font-size: 2rem;
+    }
+
+    .features-section h2,
+    .pricing-section h2,
+    .cta-section h2 {
+      font-size: 1.7rem;
+    }
+
+    .features-section .features-cards .feature-card,
+    .pricing-section .pricing-cards .pricing-card {
+      padding: 2rem 1rem;
+    }
+  }
+}

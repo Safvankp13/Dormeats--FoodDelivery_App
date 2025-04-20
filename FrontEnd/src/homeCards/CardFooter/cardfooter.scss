@@ -1,0 +1,110 @@
+.footer {
+    width: 100%;
+    background: radial-gradient(circle, rgb(235, 25, 56) 4%, rgb(195, 16, 40) 51%, rgb(190, 12, 45) 100%);
+    color: #fff;
+    padding: 30px 20px; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  
+    .footer--top {
+      max-width: 1000px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  
+      .footer--top--left {
+        h2 {
+          font-size: 28px;
+          font-weight: 700;
+          color: #ffffff; 
+          margin-bottom: 10px;
+        }
+  
+        p {
+          font-size: 15px;
+          color: rgba(255, 255, 255, 0.85); 
+        }
+      }
+  
+      .footer--top--right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+  
+        .footer--top--right--flex {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 80%;
+          max-width: 700px;
+          gap: 20px;
+          text-align: left;
+  
+          .footer--top--right--flex--left,
+          .footer--top--right--flex--right {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+  
+          .footer--top--right--flex--left {
+            p {
+              font-weight: 600;
+              color: rgba(255, 255, 255, 0.8); 
+              font-size: 14px;
+              text-transform: uppercase;
+            }
+          }
+  
+          .footer--top--right--flex--right {
+            p {
+              font-size: 14px;
+              color: rgba(255, 255, 255, 0.7); 
+              transition: color 0.3s ease-in-out;
+  
+              &:hover {
+                color: #ffffff; 
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .footer-bottom {
+      margin-top: 15px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.6); 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 25px 15px;
+  
+      .footer--top {
+        .footer--top--right {
+          .footer--top--right--flex {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+  
+            .footer--top--right--flex--left,
+            .footer--top--right--flex--right {
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  
