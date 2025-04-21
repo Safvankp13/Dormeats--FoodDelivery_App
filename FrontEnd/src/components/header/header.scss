@@ -42,17 +42,16 @@
       .menu-icon {
         display: none;
         cursor: pointer;
-        
 
         svg {
           width: 28px;
           height: 28px;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
           display: block;
           position: absolute;
-          top: 1.5rem;
+          top: 1.2rem;
           right: 1.5rem;
           z-index: 1100;
         }
@@ -63,7 +62,7 @@
           display: flex;
           gap: 0.5rem;
           align-items: center;
- 
+          justify-content: center;
           flex-wrap: wrap;
 
           a {
@@ -120,7 +119,6 @@
         }
 
         .more-menu-container {
-          
           position: relative;
           display: inline-block;
 
@@ -137,12 +135,10 @@
             z-index: 10;
 
             ul {
-              
               list-style: none;
               padding: 0;
-             
+
               li {
-                
                 padding: 10px 15px;
                 cursor: pointer;
 
@@ -150,7 +146,7 @@
                   text-decoration: none;
                   color: #333;
                   text-align: center;
-                  display: inline-block; 
+                  display: inline-block;
                   font-size: 16px;
                   width: 100%;
                   border-radius: 6px;
@@ -165,11 +161,11 @@
           }
         }
 
-        @media (max-width: 768px) {
+        // Responsive for tablets and below (1024px and 768px)
+        @media (max-width: 1024px) {
           display: none;
           position: absolute;
           top: 100%;
-          
           left: 0;
           width: 100%;
           background-color: white;
@@ -177,7 +173,6 @@
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 
           &.show {
-            
             display: block;
           }
 
@@ -187,11 +182,21 @@
             padding: 1rem;
 
             a {
-              
               width: 100%;
               padding: 0.75rem 0;
               text-align: left;
             }
+          }
+
+          .more-menu-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 0.5rem;
+          }
+
+          .menu-dropdown {
+            width: 100%;
           }
         }
       }
